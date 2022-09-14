@@ -1,0 +1,137 @@
+/* @font-face {
+
+    font-family: perfect dos vga;
+
+    src: url(assets/perfect/dos/vga/437.ttf);
+
+} */
+
+/*cuerpo*/
+
+body {
+    background-color: #040404;
+
+}
+
+/*barra de navegacion*/
+
+nav {
+    background-color: #040404;
+}
+
+/*estilo iconos redes sociales*/
+#social {
+    float: right;
+}
+
+.redes {
+    border-style: solid;
+    border-color: #040404;
+    border-radius: 25px;
+}
+
+#titulo {
+    color: #04ac04;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+#titulo:hover {
+    color: #FFFFFF;
+    background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+        0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18,
+        0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+/*texto PORTFOLIO*/
+#portfolio {
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+        0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18,
+        0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+/*hover logos estatales*/
+
+#argentina:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #FFFFFF;
+    -webkit-box-shadow: 0px 0px 15px 15px #FFFFFF;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+#inti:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #FFFFFF;
+    -webkit-box-shadow: 0px 0px 15px 15px #FFFFFF;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+#ministerio:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px #FFFFFF;
+    -webkit-box-shadow: 0px 0px 15px 15px #FFFFFF;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+/*imagenes de los enlaces de redes sociales*/
+#logueate,
+#enlace1,
+#enlace2,
+#enlace3,
+#enlace4,
+#enlace5,
+#enlace6,
+#enlace7 {
+    overflow: hidden;
+}
+
+/*hover de las imagenes de los enlaces de redes sociales*/
+#logueate:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#enlace1:hover {
+    transform: scale(1.6);
+    filter: brightness(1.2);
+}
+
+#enlace2:hover {
+    transform: scale(1.6);
+    filter: brightness(1.2);
+}
+
+#enlace3:hover {
+    transform: scale(1.6);
+    filter: brightness(1.2);
+}
+
+#enlace4:hover {
+    transform: scale(1.6);
+    filter: brightness(1.2);
+}
+
+#enlace5:hover {
+    transform: scale(1.6);
+    filter: brightness(1.2);
+}
+
+#enlace6:hover {
+    transform: scale(1.6);
+    filter: brightness(1.2);
+}
+
+#enlace7:hover {
+    transform: scale(1.6);
+    filter: brightness(1.2);
+}
