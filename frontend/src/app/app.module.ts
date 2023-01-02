@@ -10,6 +10,9 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
+import { ExperienciaLaboralComponent } from './components/experiencia-laboral/experiencia-laboral.component';
+import { CursosRealizadosComponent } from './components/cursos-realizados/cursos-realizados.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { EducacionComponent } from './components/educacion/educacion.component';
     AcercaDeComponent,
     BannerComponent,
     HardSoftSkillsComponent,
-    EducacionComponent
+    EducacionComponent,
+    ExperienciaLaboralComponent,
+    CursosRealizadosComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,
