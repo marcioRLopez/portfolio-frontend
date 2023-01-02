@@ -1,0 +1,21 @@
+/*footer*/
+
+.row{
+    background-color: #040404;
+    
+}
+footer{
+    padding-top: 50px;
+    font-size: 14px;
+    text-align: center;
+ 
+}
+p{
+    color: #04ac04;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
+        0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18,
+        0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}

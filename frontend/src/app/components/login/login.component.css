@@ -1,0 +1,307 @@
+/*nueva fuente*/
+
+/* @font-face {
+
+	font-family: perfect dos vga;
+
+	src: url(fuentes/perfect\ dos\ vga\ 437.ttf);
+
+} */
+
+/*cuerpo*/
+body {
+	margin: 0;
+}
+/*seccion principal*/
+.sect {
+	width: 100%;
+	min-height: 750px;
+}
+/*seccion del video*/
+#sect1 {
+	background-color: #3333337d;
+	color: #fff;
+}
+
+#sect1 {
+	position: relative;
+	overflow: hidden;
+}
+/*video que se reproduce*/
+video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: -5;
+}
+/*titulo principal*/
+h1 {
+	margin: 0;
+	padding-top: 3rem;
+	padding-left: 2rem;
+	margin-bottom: 200px;
+
+}
+/*imagen del titulo principal*/
+img {
+	height: 130px;
+	width: 460px;
+	margin-bottom:-65px;
+}
+/* hover de la imagen*/
+.contenedor {
+	position: relative;
+	height: 290px;
+	width: 290px;
+	margin: 50px 20px;
+	float: left;
+  }
+  
+  .contenedor img {
+	position: absolute;
+	left: 0;
+	transition: opacity 1.5s ease-in-out;
+  }
+  
+  .contenedor img.top:hover {
+	opacity: 0;
+	cursor: grab;
+	box-shadow: 5px 5px 15px 5px #ffffff;
+  }
+
+
+/*login*/
+
+#wrapper {
+	/* Centrado */
+	width: 300px;
+	height: 400px;
+	margin: 70px auto;
+}
+.gradient{
+	padding-top: 5px;
+}
+
+.login-form {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	background: #051681;
+	border: 1px solid #fff;
+	-webkit-box-shadow: 5px 5px 15px 5px #F0F0F0;
+	box-shadow: 5px 5px 15px 5px #F0F0F0;
+}
+
+/*encabezado*/
+.login-form .header {
+	padding: 40px 30px 30px 30px;
+}
+
+.login-form .header h1 {
+	font-family: perfect dos vga;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 34px;
+	color: #FFFF;
+	margin-bottom: 10px;
+	text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+}
+
+/*contenido*/
+
+.login-form .content {
+	padding: 0 30px 25px 30px;
+}
+
+/*imagen de login*/
+#galaxian {
+	height: 90px;
+	width: 90px;
+	border-style: solid;
+	border-radius: 50px;
+}
+#divgalaxian {
+	text-align: center;
+	padding-top: 20px;
+}
+
+/* primer campo de ingreso */
+.login-form .content .input {
+	width: 188px;
+	padding: 15px 25px;
+	font-family: perfect dos vga;
+	font-weight: 400;
+	font-size: 24px;
+	color: #FFFF;
+	background: #FFFF;
+
+}
+
+/* segundo campo de ingreso */
+.login-form .content .password,
+.login-form .content .pass-icon {
+	margin-top: 25px;
+}
+
+.login-form .content .input:hover {
+	background: #051681;
+	color:#051681;
+}
+
+.login-form .content .input:focus {
+	background: #dfe9ec;
+	color:#051681;
+
+}
+
+/*iconos*/
+
+.user-icon,
+.pass-icon {
+	width: 66px;
+	height: 67px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	padding-right: 2px;
+	z-index: -1;
+	border-style: solid;
+	border-color: #FFFF;
+	box-shadow: 5px 5px 15px 5px #F0F0F0;
+}
+
+.user-icon {
+	top: 153px;
+	background: #051681 url(http://www.demo.amitjakhu.com/login-form/images/user-icon.png) no-repeat center;
+	text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+}
+
+.pass-icon {
+	top: 201px;
+	background: #051681 url(http://www.demo.amitjakhu.com/login-form/images/pass-icon.png) no-repeat center;
+	text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+
+}
+
+.content input:focus+div {
+	left: -46px;
+}
+
+/*modal*/
+label {
+	font-family: perfect dos vga;
+	color:#bfbf47;
+	margin-left: 10px;
+}
+.modal-header,
+.modal-body,
+.modal-footer{
+	background-color: #051681;
+	box-shadow: 5px 5px 15px 5px #F0F0F0;
+}
+button.btn-close {
+	background-color: #FFFFFF;
+}
+.modal-header{
+	padding-bottom: -27px;
+	margin-bottom: 20px;
+}
+
+/*pie de pagina*/
+
+.login-form .footer {
+	padding: 25px 30px 40px 30px;
+	overflow: auto;
+	background: #d4dedf;
+	border-top: 1px solid #fff;
+}
+
+/* boton de login*/
+.login-form .footer .button
+ {
+	float: right;
+	padding: 11px 25px;
+	font-family: perfect dos vga;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	background: #051681;
+	cursor: pointer;
+	text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+	border-style: solid;
+	border-radius: 10px;
+	
+	
+
+}
+/*boton de registro*/
+#registro {
+	float: right;
+	padding: 11px 25px;
+	font-family: perfect dos vga;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	background: #051681;
+	cursor: pointer;
+	text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+
+}
+
+/*hover de boton login y registro*/
+.login-form .footer .button:hover {
+	background: #FFFF;
+	color: #051681;
+
+}
+#registro:hover{
+	background: #FFFF;
+	color: #051681;
+}
+
+/*foco del boton login*/
+.login-form .footer .button:focus {
+	position: relative;
+	bottom: -1px;
+	background: #051681;
+
+}
+
+/* registro */
+.login-form .footer .register {
+	display: block;
+	float: right;
+	padding: 10px;
+	margin-right: 20px;
+
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	font-family: perfect dos vga;
+	font-weight: 300;
+	font-size: 18px;
+	color: #051681;
+}
+
+.login-form .footer .register:hover {
+	color: black;
+}
+
+.login-form .footer .register:focus {
+	position: relative;
+	bottom: -1px;
+}
+#close,
+#save {
+	background-color: #FFFFFF;
+	font-family: perfect dos vga;
+	color: #051681;
+}
+#close,
+#save:hover {
+	background-color: #051681;
+	color: #bfbf47;
+}
+
