@@ -1,0 +1,23 @@
+/*divisor similar a menu vintage*/
+#divisor1 {
+    background-color: #04ac04;
+
+}
+
+/*divisor final similar a opciones de teclas FUNCTION vintage*/
+#divisor2 {
+    border-style: solid;
+    border-color: #04ac04;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: #04ac04;
+    margin-bottom: 30px;
+    padding-left: 30px;
+
+}
+
+/*hover del anterior divisor*/
+#divisor2:hover {
+    background-color: #FFFFFF;
+    cursor: progress;
+}

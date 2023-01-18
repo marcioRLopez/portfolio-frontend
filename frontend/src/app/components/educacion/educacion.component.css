@@ -1,0 +1,44 @@
+/*encabezado del div similar a free pascal*/
+*{
+    font-size: 15px;
+}
+#encabezado,
+#encabezado5 {
+    background-color: #051681;
+    border-style: solid;
+    border-color: #FFFFFF;
+}
+
+#encabezado2 {
+    color: #FFFFFF;
+}
+
+#encabezado3,
+#encabezado6 {
+    background-color: #bebdb8;
+}
+
+.capital {
+    color: #974847;
+}
+
+.capital2 {
+    color: #362d22;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+.yellow {
+    color: #bfbf47;
+
+}
+
+.azul {
+    color: #051681;
+}
+
+.gris {
+    color: #bebdb8;
+}
