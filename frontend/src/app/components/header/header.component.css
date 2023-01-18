@@ -32,7 +32,7 @@ nav {
 
 #titulo {
     color: #04ac04;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Press Start 2P', cursive;
     text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ nav {
 /*texto PORTFOLIO*/
 #portfolio {
     font-size: 34px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Press Start 2P', cursive;
     color: #FFFFFF;
     background: #232323;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,

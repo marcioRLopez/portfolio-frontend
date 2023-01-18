@@ -1,5 +1,7 @@
 /*footer*/
 
+
+
 .row{
     background-color: #040404;
     
@@ -12,8 +14,8 @@ footer{
 }
 p{
     color: #04ac04;
-    font-size: 24px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;;
     color: #FFFFFF;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF,
         0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18,
