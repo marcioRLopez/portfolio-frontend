@@ -17,3 +17,12 @@ pre {
 .icon {
     color: #dd9d20;
 }
+
+/*lapiz*/
+#pen{
+    margin-right: 20px;
+    margin-bottom: 10px;
+   display: flex;
+   justify-content: flex-end;   
+
+}

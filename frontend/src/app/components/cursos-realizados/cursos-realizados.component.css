@@ -8,3 +8,11 @@ p{
     border-style: double;
     border-color: #04ac04;
 }
+/*lapiz*/
+#pen{
+    margin-right: 20px;
+    margin-bottom: 10px;
+   display: flex;
+   justify-content: flex-end;   
+
+}

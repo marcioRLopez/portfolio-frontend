@@ -38,3 +38,12 @@ img {
         0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18,
         0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 }
+
+/*lapiz*/
+#pen{
+    margin-right: 20px;
+    margin-bottom: 10px;
+   display: flex;
+   justify-content: flex-end;   
+
+}
