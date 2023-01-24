@@ -10,6 +10,7 @@ import { EducacionComponent } from './components/educacion/educacion.component';
 import { CursosRealizadosComponent } from './components/cursos-realizados/cursos-realizados.component';
 import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { Pagina404Component } from './components/pagina404/pagina404.component';
 
 
 
@@ -24,7 +25,7 @@ const routes: Routes = [
   { path: 'hard-soft-skills', component: HardSoftSkillsComponent},
   { path: 'proyectos', component: ProyectosComponent},
   { path: 'footer', component: FooterComponent},
-  // { path: '**', component: Pagina404Componet},
+  { path: '**', component: Pagina404Component},
  
   
 

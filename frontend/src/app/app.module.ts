@@ -14,6 +14,7 @@ import { ExperienciaLaboralComponent } from './components/experiencia-laboral/ex
 import { CursosRealizadosComponent } from './components/cursos-realizados/cursos-realizados.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { IndexComponent } from './components/index/index.component';
+import { Pagina404Component } from './components/pagina404/pagina404.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { IndexComponent } from './components/index/index.component';
     ExperienciaLaboralComponent,
     CursosRealizadosComponent,
     ProyectosComponent,
-    IndexComponent
+    IndexComponent,
+    Pagina404Component
   ],
   imports: [
     BrowserModule,
