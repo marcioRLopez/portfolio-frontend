@@ -24,20 +24,35 @@
         <p class="yellow"><strong class="white">var</strong> <br> <em class="azul">---------</em> gd, gr : integer</p>
         <p class="yellow"><strong class="white"><em class="azul">----------</em>PathToDriver :</strong>string;</p>
         <p><strong class="white">begin</strong></p>
-        <p class="yellow"><strong class="white"><em class="azul">----------</em>Estudios Primarios: </strong> Escuela
-          "CORNELIO SAAVEDRA", anios 1984-1988 ;</p>
-        <p class="yellow"><strong class="white"><em class="azul">----------</em>Estudios Intermedios:</strong> Colegio
-          Nacional Intermedio "9 de Abril, años 1989-1991" ;</p>
-        <p class="yellow"><strong class="white"><em class="azul">----------</em>Estudios Secundarios:</strong> Colegio
-          Nacional Mixto "9 de Abril", anios 1992-1995 ;</p>
-        <p class="yellow"><strong class="white"><em class="azul">----------</em>Estudios Universitarios:</strong>
-          Universidad Nacional de Jujuy, UNJU, Facultad de Ingenieria ;</p>
-        <p class="yellow"><strong class="white"><em class="azul">----------</em><em
-              class="azul">----------</em>Ingenieria Informatica 1er. anio -- 2011 ;</strong></p>
-        <p class="yellow"><strong class="white"><em class="azul">----------</em><em
-              class="azul">----------</em>Licenciatura en Sistemas 1er. anio -- 2012 ;</strong></p>
-        <p class="yellow"><strong class="white"><em class="azul">----------</em><em class="azul">----------</em>Analista
-            Programdor Universitario A.P.U 3er. anio -- 2013/2022 ;</strong></p>
+        
+        
+          <p class="yellow"><strong class="white"><em class="azul">----------</em>Estudios Primarios: </strong>, anios 1984-1988 ;</p>
+          <p class="yellow"><strong class="white"><em class="azul">----------</em>Estudios Intermedios:</strong> Colegio
+            Nacional Intermedio "9 de Abril, años 1989-1991" ;</p>
+          <p class="yellow"><strong class="white"><em class="azul">----------</em>Estudios Secundarios:</strong> Colegio
+            Nacional Mixto "9 de Abril", anios 1992-1995 ;</p>
+          <p class="yellow"><strong class="white"><em class="azul">----------</em>Estudios Universitarios:</strong>
+            Universidad Nacional de Jujuy, UNJU, Facultad de Ingenieria ;</p>
+          <p class="yellow"><strong class="white"><em class="azul">----------</em><em
+                class="azul">----------</em>Ingenieria Informatica 1er. anio -- 2011 ;</strong></p>
+          <p class="yellow"><strong class="white"><em class="azul">----------</em><em
+                class="azul">----------</em>Licenciatura en Sistemas 1er. anio -- 2012 ;</strong></p>
+          <p class="yellow"><strong class="white"><em class="azul">----------</em><em class="azul">----------</em>Analista
+              Programdor Universitario A.P.U 3er. anio -- 2013/2022 ;</strong></p>  
+     
+
+              <div *ngFor="let cursitos2 of cursitos">
+                <div class="col-3">
+                  <h3>{{cursitos2.curso}}</h3>
+                  <h4>{{cursitos2.años}</h4>
+                  <h5></h5>
+                </div>
+              </div>
+
+
+
+
+
         <!--icono de lapiz-->
     <a href="">
       <div id="pen">
@@ -61,3 +76,6 @@
   </div>
   <br>
   <br>
+  
+
+   

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
+
+
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -15,6 +18,8 @@ import { CursosRealizadosComponent } from './components/cursos-realizados/cursos
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { IndexComponent } from './components/index/index.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
+
+
 
 @NgModule({
   declarations: [
@@ -30,12 +35,16 @@ import { Pagina404Component } from './components/pagina404/pagina404.component';
     CursosRealizadosComponent,
     ProyectosComponent,
     IndexComponent,
-    Pagina404Component
+    Pagina404Component,
+   
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

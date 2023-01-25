@@ -1,0 +1,75 @@
+{
+
+    "nombre": "Marcio Rosamel Lopez Perez",
+
+    "yo":
+        {
+        
+            "titulo":"Analista Programador Universitario",
+            "facultad": "Facultad de Ingenieria  UNJU",
+            "titulo2": "Full Stack Developer Jr."
+        },
+    
+    "experiencia_laboral":
+        {
+           
+            "lugares_de _trabajo":"por el momento no he realizado trabajos en el sector informatico",
+            "experiencia": "la adquirida en la facultad y empiricamente",
+            "proyecto_trabajados":"solo de nivel universitario y de aprendizaje"
+        },
+
+        "estudios":[
+            {
+                "id": 1,
+                "curso": "escuela cornelio saavedra",
+                "años" : " 1984 - 1988"
+            },
+
+            {
+                "id": 2,
+                "curso": "colegio nacional 9 de abril",
+                "años" : " 1989 - 1995"
+            },
+
+            {
+                "id": 3,
+                "curso": "facultad de ingenieria - UNJU",
+                "años" : "2013 - 2022"
+            }
+
+            
+        ],
+        
+
+        "cursos_realizados":"he realizado cursos tutoriales de youtube y cursos online sin certificado",
+
+        "hard_skills":
+        {
+           "html": 80,
+           "css": 75,
+           "java": 60,
+           "javascript":50
+        },
+
+        "soft_skills":
+        {
+            "comunicacion": 70,
+            "creatividad":80,
+            "adaptacion":77,
+            "resolucion":80
+
+        },
+
+        "language":
+        {
+            "oral":70,
+            "escrito": 80,
+            "compresion_y_entendimiento": 75
+
+        },
+
+        "proyectos": "proyectos unicamente locales, no publicados en la web"
+
+        
+    
+}

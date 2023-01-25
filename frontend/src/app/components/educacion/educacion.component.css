@@ -59,3 +59,7 @@
    justify-content: flex-end;   
 
 }
+h3, h4 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
