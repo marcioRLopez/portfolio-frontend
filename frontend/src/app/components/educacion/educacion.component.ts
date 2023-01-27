@@ -9,13 +9,13 @@ import { DatosService } from 'src/app/services/datos.service';
 })
 export class EducacionComponent implements OnInit {
 
-  cursitos : any = [];
+  studies : any = [];
 
   constructor(private datos: DatosService ) { }
 
   ngOnInit(): void {
-    this.datos.getDatos().subscribe(data =>{
-      this.cursitos = data.estudios
+    this.datos.getDatos().subscribe(data => {
+      this.studies = data.estudios
     })
   }
 
