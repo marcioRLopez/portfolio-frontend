@@ -8,15 +8,14 @@ import { DatosService } from 'src/app/services/datos.service';
 })
 export class AcercaDeComponent implements OnInit {
 
-  nombresito : string = "";
-  yo2 : string = "";
+  mios : any =[];
 
   constructor(private datos:DatosService) { }
 
   ngOnInit(): void {
     this.datos.getDatos().subscribe(data => {
-      this.nombresito = data.nombre;
-      this.yo2 = data.yo;
+      this.mios = data.yo;
+      
      
     })
   }

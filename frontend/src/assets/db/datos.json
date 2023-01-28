@@ -1,86 +1,67 @@
 {
-
-    "names" : 
-    [
-        {"nombre" : "Marcio Rosamel"},
-        {"apellido" : "Lopez Perez"}
-
-    ],
-
-
-    "yo":
-    [
+    "names": [
         {
-        
-            "titulo":"Analista Programador Universitario",
+            "id":1,
+            "nombre": "Marcio Rosamel"
+        },
+        {
+            "id":2,
+            "apellido": "Lopez Perez"
+        }
+    ],
+    "yo": [
+        {
+            "id": 1,
+            "titulo": "Analista Programador Universitario",
             "facultad": "Facultad de Ingenieria  UNJU",
             "titulo2": "Full Stack Developer Jr."
         }
     ],
-    "experiencia_laboral":
+    "experiencia_laboral": [
         {
-           
-            "lugares_de _trabajo":"por el momento no he realizado trabajos en el sector informatico",
+            "id":1,
+            "lugares_de_trabajo": "por el momento no he realizado trabajos en el sector informatico",
             "experiencia": "la adquirida en la facultad y empiricamente",
-            "proyecto_trabajados":"solo de nivel universitario y de aprendizaje"
-        },
-
-        "estudios" :
-        [
-            {
-                "id": 1,
-                "nivel" : "ESTUDIOS PRIMARIOS",
-                "curso": "escuela cornelio saavedra",
-                "duracion" : " 1984 a 1988"
-            },
-
-            {
-                "id": 2,
-                "nivel" : "ESTUDIOS SECUNDARIOS",
-                "curso": "colegio nacional 9 de abril",
-                "duracion" : " 1989 a 1995"
-            },
-
-            {
-                "id": 3,
-                "nivel" : "ESTUDIOS SUPERIORES",
-                "curso": "facultad de ingenieria/UNJU",
-                "duracion" : "2013 a 2023"
-            }
-
-            
-        ],
-        
-
-        "cursos_realizados":"he realizado cursos tutoriales de youtube y cursos online sin certificado",
-
-        "hard_skills":
+            "proyecto_trabajados": "solo de nivel universitario y de aprendizaje"
+        }
+    ],
+    "estudios": [
         {
-           "html": 80,
-           "css": 75,
-           "java": 60,
-           "javascript":50
+            "id": 1,
+            "nivel": "ESTUDIOS PRIMARIOS",
+            "curso": "escuela cornelio saavedra",
+            "duracion": " 1984 a 1988"
         },
-
-        "soft_skills":
         {
-            "comunicacion": 70,
-            "creatividad":80,
-            "adaptacion":77,
-            "resolucion":80
-
+            "id": 2,
+            "nivel": "ESTUDIOS SECUNDARIOS",
+            "curso": "colegio nacional 9 de abril",
+            "duracion": " 1989 a 1995"
         },
-
-        "language":
         {
-            "oral":70,
-            "escrito": 80,
-            "compresion_y_entendimiento": 75
-
-        },
-
-        "proyectos": "he trabajado en proyectos locales unicamente, no publicados en la web"
-
-        
-    
+            "id": 3,
+            "nivel": "ESTUDIOS SUPERIORES",
+            "curso": "facultad de ingenieria/UNJU",
+            "duracion": "2013 a 2023"
+        }
+    ],
+    "cursos_realizados": "he realizado cursos tutoriales de youtube y cursos online sin certificado",
+    "hard_skills": {
+        "html": 80,
+        "css": 75,
+        "java": 60,
+        "javascript": 50
+    },
+    "soft_skills": {
+        "comunicacion": 70,
+        "creatividad": 80,
+        "adaptacion": 77,
+        "resolucion": 80
+    },
+    "language": {
+        "oral": 70,
+        "escrito": 80,
+        "compresion_y_entendimiento": 75
+    },
+    "proyectos": "he trabajado en proyectos locales unicamente, no publicados en la web"
 }
