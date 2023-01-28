@@ -11,10 +11,12 @@ export class BannerComponent implements OnInit {
   constructor(private datos:DatosService) { }
 
   names : any = [];
+  imagen : any = [];
 
   ngOnInit(): void {
     this.datos.getDatos().subscribe(data => {
       this.names = data.names;
+      this.imagen = data.imagen;
     })
   }
 

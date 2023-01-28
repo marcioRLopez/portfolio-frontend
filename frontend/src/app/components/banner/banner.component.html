@@ -1,15 +1,20 @@
-<<!--banner-->
+<!--banner-->
 
-<div class="container">
+<div  *ngFor="let photos of imagen">
+
+  <div class="container">
     <div class="row">
-      <img  id="login1" src="assets/banner.jpg" class="img-responsive" alt="FOTO DE COMPUTADORA VINTAGE">
+      <img  id="login1" [src]="photos.imagen1" class="img-responsive" [alt]="photos.titulo">
     </div>
   </div>
-  <img id="perfil" src="assets/perfil.png" alt="foto de perfil personal MARCIO ROSAMEL LOPEZ PEREZ"
+  <img id="perfil" [src]="photos.imagen2" [alt]="photos.titulo"
     class="image-responsive">
     <br>
     <br>
     <br>
+
+
+</div>
   <!--NOMBRE-->
   
     <div *ngFor="let nombres of names">

@@ -1,5 +1,6 @@
-<!--DIVISOR HARK SKILLS-->
-<div id="divisor3">
+<div *ngFor="let habs of skills">
+  <!--DIVISOR HARD SKILLS-->
+  <div id="divisor3">
     <div class="container4">
 
       <p class="escritura"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#040404"
@@ -11,39 +12,45 @@
         </svg><strong> C/:</strong><span class="maquina-escribir"><strong> HARD SKILLS .</strong></span></p>
     </div>
   </div>
+
+
   <!--CIRCULOS DE PORCENTAJE-->
   <div class="container">
 
 
     <div class="ui-widgets">
-      <div class="ui-values">85%</div>
-      <div class="ui-labels">H T M L</div>
+      <div class="ui-values">{{habs.number1}}%</div>
+      <div class="ui-labels"> {{habs.skills1}}</div>
     </div>
 
     <div class="ui-widgets">
-      <div class="ui-values">50%</div>
-      <div class="ui-labels">C S S </div>
+      <div class="ui-values">{{habs.number2}}%</div>
+      <div class="ui-labels">{{habs.skills2}}</div>
     </div>
     <div class="ui-widgets">
-      <div class="ui-values">85%</div>
-      <div class="ui-labels">J A V A</div>
+      <div class="ui-values">{{habs.number3}}%</div>
+      <div class="ui-labels">{{habs.skills3}}</div>
     </div>
 
     <div class="ui-widgets">
-      <div class="ui-values">50%</div>
-      <div class="ui-labels">JAVASCRIPT</div>
+      <div class="ui-values">{{habs.number4}}%</div>
+      <div class="ui-labels">{{habs.skills4}}</div>
     </div>
 
-    <!--icono de lapiz-->
-    <a href="">
-      <div id="pen">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#dd9d20" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-        </svg>
-      </div>
-    </a>
+  </div>
 
+  <!--icono de lapiz-->
+  <a href="">
+    <div id="pen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#dd9d20" class="bi bi-pencil-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+      </svg>
+    </div>
+  </a>
 
+  <div *ngFor="let blandas of softs">
     <!--DIVISOR SOFT SKILLS-->
     <div id="divisor4">
       <div class="container4">
@@ -58,39 +65,50 @@
       </div>
     </div>
     <!--CIRCULOS DE PORCENTAJE-->
+
+    <div class="container">
+
+
+      <div class="ui-widgets">
+        <div class="ui-values">{{blandas.number1}}%</div>
+        <div class="ui-labels">{{blandas.soft1}}</div>
+      </div>
+
+      <div class="ui-widgets">
+        <div class="ui-values">{{blandas.number2}}%</div>
+        <div class="ui-labels">{{blandas.soft2}}</div>
+      </div>
+      <div class="ui-widgets">
+        <div class="ui-values">{{blandas.number3}}%</div>
+        <div class="ui-labels">{{blandas.soft3}}</div>
+      </div>
+
+      <div class="ui-widgets">
+        <div class="ui-values">{{blandas.number4}}%</div>
+        <div class="ui-labels">{{blandas.soft4}}</div>
+      </div>
+
+      <!--icono de lapiz-->
+      <a href="">
+        <div id="pen">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#dd9d20" class="bi bi-pencil-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+          </svg>
+        </div>
+      </a>
+
+    </div>
+
   </div>
-  <div class="container">
 
 
-    <div class="ui-widgets">
-      <div class="ui-values">85%</div>
-      <div class="ui-labels">COMUNICACION</div>
-    </div>
 
-    <div class="ui-widgets">
-      <div class="ui-values">50%</div>
-      <div class="ui-labels">CREATIVIDAD</div>
-    </div>
-    <div class="ui-widgets">
-      <div class="ui-values">85%</div>
-      <div class="ui-labels">ADAPTACION</div>
-    </div>
 
-    <div class="ui-widgets">
-      <div class="ui-values">50%</div>
-      <div class="ui-labels">RESOLUCION</div>
-    </div>
 
-<!--icono de lapiz-->
-<a href="">
-  <div id="pen">
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#dd9d20" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-      <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-    </svg>
-  </div>
-</a>
 
-  </div>
+
   <!--DIVISOR LANGUAGE SKILLS-->
   <div id="divisor5">
     <div class="container4">
@@ -105,45 +123,53 @@
     </div>
   </div>
 
-  <!--PROGRESO LINEAL LENGUAJE-->
+  <div *ngFor="let lenguajes of languages">
 
-  <div class="container">
-    <div class="row">
-      <p id="eng"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-            class="bi bi-person-badge-fill" viewBox="0 0 16 16">
-            <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z" />
-          </svg> ORAL </strong> 56%</p>
-      <div id="progress">
-      </div>
-      <p id="eng"><strong><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-            class="bi bi-pencil" viewBox="0 0 16 16">
-            <path
-              d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
-          </svg> ESCRITO </strong> 70%</p>
-      <div id="progress1">
-      </div>
-      <p id="eng"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-            class="bi bi-person-video3" viewBox="0 0 16 16">
-            <path
-              d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2Z" />
-            <path
-              d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783.059-.187.09-.386.09-.593V4a2 2 0 0 0-2-2H2Z" />
-          </svg> COMPRENSION Y ENTENDIMIENTO </strong> 80%</p>
-      <div id="progress2">
-      </div>
+<!--PROGRESO LINEAL LENGUAJE-->
+
+<div class="container">
+  <div class="row">
+    <p id="eng"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+          class="bi bi-person-badge-fill" viewBox="0 0 16 16">
+          <path
+            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z" />
+        </svg> {{lenguajes.lenguaje1}}</strong> {{lenguajes.number1}}%</p>
+    <div id="progress">
     </div>
-    <!--icono de lapiz-->
-    <a href="">
-      <div id="pen">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#dd9d20" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-        </svg>
-      </div>
-    </a>
+    <p id="eng"><strong><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+          class="bi bi-pencil" viewBox="0 0 16 16">
+          <path
+            d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+        </svg> {{lenguajes.lenguaje2}} </strong> {{lenguajes.number2}}%</p>
+    <div id="progress1">
+    </div>
+    <p id="eng"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+          class="bi bi-person-video3" viewBox="0 0 16 16">
+          <path
+            d="M14 9.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm-6 5.7c0 .8.8.8.8.8h6.4s.8 0 .8-.8-.8-3.2-4-3.2-4 2.4-4 3.2Z" />
+          <path
+            d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5.243c.122-.326.295-.668.526-1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v7.81c.353.23.656.496.91.783.059-.187.09-.386.09-.593V4a2 2 0 0 0-2-2H2Z" />
+        </svg> {{lenguajes.lenguaje3}}</strong> {{lenguajes.number3}}%</p>
+    <div id="progress2">
+    </div>
+  </div>
+  <!--icono de lapiz-->
+  <a href="">
+    <div id="pen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#dd9d20" class="bi bi-pencil-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+      </svg>
+    </div>
+  </a>
+</div>
+
+
+
+
   </div>
 
   <!--espacio y linea de separacion-->
-  
+
   <hr>
-  

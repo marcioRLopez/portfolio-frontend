@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosService } from 'src/app/services/datos.service';
 
 @Component({
   selector: 'app-hard-soft-skills',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hard-soft-skills.component.css']
 })
 export class HardSoftSkillsComponent implements OnInit {
+  skills : any = [];
+  softs : any = [];
+  languages : any = [];
 
-  constructor() { }
+  constructor(private datos:DatosService) { }
 
   ngOnInit(): void {
-  }
+    this.datos.getDatos().subscribe(data => {
+      this.skills = data.habilidades;
+      this.softs = data.soft;
+      this.languages = data.language
+  })
 
+  }
 }
