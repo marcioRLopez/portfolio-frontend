@@ -1,7 +1,10 @@
 /*estilo de arte ASCII*/
+
+
 pre {
     color: #dd9d20;
     font-size: 20px;
+    margin-left: -20px;
 }
 
 #monitor {

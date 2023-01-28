@@ -9,6 +9,8 @@
             "apellido": "Lopez Perez"
         }
     ],
+
+
     "yo": [
         {
             "id": 1,
@@ -17,6 +19,8 @@
             "titulo2": "Full Stack Developer Jr."
         }
     ],
+
+
     "experiencia_laboral": [
         {
             "id":1,
@@ -25,6 +29,8 @@
             "proyecto_trabajados": "solo de nivel universitario y de aprendizaje"
         }
     ],
+
+
     "estudios": [
         {
             "id": 1,
@@ -45,23 +51,36 @@
             "duracion": "2013 a 2023"
         }
     ],
-    "cursos_realizados": "he realizado cursos tutoriales de youtube y cursos online sin certificado",
-    "hard_skills": {
-        "html": 80,
-        "css": 75,
-        "java": 60,
-        "javascript": 50
-    },
-    "soft_skills": {
-        "comunicacion": 70,
-        "creatividad": 80,
-        "adaptacion": 77,
-        "resolucion": 80
-    },
-    "language": {
-        "oral": 70,
-        "escrito": 80,
-        "compresion_y_entendimiento": 75
-    },
+
+
+    "cursos_realizados": "he realizado variedad de cursos tutoriales de youtube y cursos online sin certificado",
+
+
+    "habilidades":
+    [
+        {
+            "id":1,
+            "html": 80,
+            "css": 75,
+            "java": 60,
+            "javascript": 50
+        },
+        
+         {   "id":2,
+            "comunicacion": 70,
+            "creatividad": 80,
+            "adaptacion": 77,
+            "resolucion": 80
+        },
+
+        {
+            "id":3,
+            "oral": 70,
+            "escrito": 80,
+            "compresion_y_entendimiento": 75
+        }
+    ],
+    
+
     "proyectos": "he trabajado en proyectos locales unicamente, no publicados en la web"
 }
