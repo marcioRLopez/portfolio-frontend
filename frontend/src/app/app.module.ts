@@ -20,6 +20,13 @@ import { CursosRealizadosComponent } from './components/cursos-realizados/cursos
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { IndexComponent } from './components/index/index.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
+import { BannerModalComponent } from './modales/banner-modal/banner-modal.component';
+import { AcercaDeModalComponent } from './modales/acerca-de-modal/acerca-de-modal.component';
+import { CursosRealizadosModalComponent } from './modales/cursos-realizados-modal/cursos-realizados-modal.component';
+import { EducacionModalComponent } from './modales/educacion-modal/educacion-modal.component';
+import { ExperienciaLaboralModalComponent } from './modales/experiencia-laboral-modal/experiencia-laboral-modal.component';
+import { HardSoftSkillsModalComponent } from './modales/hard-soft-skills-modal/hard-soft-skills-modal.component';
+import { ProyectosModalComponent } from './modales/proyectos-modal/proyectos-modal.component';
 
 
 
@@ -38,6 +45,13 @@ import { Pagina404Component } from './components/pagina404/pagina404.component';
     ProyectosComponent,
     IndexComponent,
     Pagina404Component,
+    BannerModalComponent,
+    AcercaDeModalComponent,
+    CursosRealizadosModalComponent,
+    EducacionModalComponent,
+    ExperienciaLaboralModalComponent,
+    HardSoftSkillsModalComponent,
+    ProyectosModalComponent,
    
   ],
 

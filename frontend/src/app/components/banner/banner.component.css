@@ -40,10 +40,21 @@ img {
 }
 
 /*lapiz*/
-#pen{
+#pen {
     margin-right: 20px;
     margin-bottom: 10px;
    display: flex;
    justify-content: flex-end;   
 
+}
+button {
+    margin-right: 20px;
+    margin-bottom: 10px;
+   display: flex;
+   justify-content: flex-end;
+   border-style: solid;  
+   border-radius: 50px;
+}
+#modal-body {
+    background-color: #000;
 }

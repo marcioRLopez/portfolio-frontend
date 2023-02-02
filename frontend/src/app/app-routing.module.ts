@@ -13,6 +13,7 @@ import { CursosRealizadosComponent } from './components/cursos-realizados/cursos
 import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
+import { BannerModalComponent } from './modales/banner-modal/banner-modal.component';
 
 
 

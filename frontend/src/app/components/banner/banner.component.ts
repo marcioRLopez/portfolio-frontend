@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DatosService } from 'src/app/services/datos.service';
 
+
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
