@@ -135,3 +135,15 @@ nav {
     transform: scale(1.6);
     filter: brightness(1.2);
 }
+
+button {
+    background-color: #04ac04;
+    border-style: solid;
+    border-color: #04ac04;
+    color: #FFF;
+    margin-left: 5px;
+}
+
+#close {
+    background-color: #FFF;
+}

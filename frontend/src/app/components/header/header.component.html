@@ -28,7 +28,30 @@
                     src="assets/instagram.png"   id="enlace6" alt="url de mi cuenta de instagram"></a>
                 <a  href="https://www.youtube.com/channel/UCVyhH2CUqZ90_b2a8IxW3nA" target="_blank"><img
                     class="redes" src="assets/youtube.png"  id="enlace7" alt="url de mi canal de youtube"></a>
-                <a  href="login.html" id="titulo"><img id="logueate" src="assets/floppy.png" alt="imagen de floppy disk"> L O G I N</a>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-sucess" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  
+  login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ACCEDE A MI PAGINA...</h5>
+        <button  id="close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-login></app-login>
+      </div>
+      <div class="modal-footer">
+        <button  id="cerrar" type="button" class="btn btn-sucess" data-bs-dismiss="modal">Cerrar</button>
+        <button  id="guardar" type="button" class="btn btn-sucess">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
         
               </div>
 
