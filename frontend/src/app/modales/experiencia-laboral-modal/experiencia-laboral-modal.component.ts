@@ -18,6 +18,7 @@ export class ExperienciaLaboralModalComponent implements OnInit {
     proyecto_trabajados: new FormControl(''),
   });
   submitted = false;
+  
   constructor(private formBuilder:FormBuilder) { }
 
   ngOnInit(): void {
