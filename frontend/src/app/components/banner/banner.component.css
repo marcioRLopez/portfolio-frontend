@@ -26,8 +26,9 @@ img {
 #nombre {
     font-family: 'Press Start 2P', cursive;
     color: #04ac04;
-    text-align: center;
+    text-align: left;
     margin-top: -115px;
+    margin-left: 40px;
     
 }
 

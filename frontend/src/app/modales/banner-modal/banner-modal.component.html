@@ -1,45 +1,111 @@
-<form>
-  <!--Input de ingreso de imagen de portada-->
-    <div class="mb-3">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
-        <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-        <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
-      </svg>
-      <label for="exampleInputImageUrl" class="form-label">&nbsp;IMAGEN PORTADA</label>
-      <input type="url" class="form-control" id="exampleInputImageUrl" aria-describedby="ImageUrlHelp">
+  
+  <body>
+
+    <!--titulo principal -->
+    <div class="login">
+      <div class="login-screen">
+        <div class="app-title">
+        </div>
+        <!---campo de entrada de url de imagen de portada-------------->
+  
+        <div class="register-form">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+  
+            <div class="form-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+              </svg>
+              <label class="login-field-icon fui-user" for="imagen1">&nbsp;IMAGEN PORTADA</label>
+              <input type="url" formControlName="imagen1" class="form-control" id="imagen1"
+                [ngClass]="{ 'is-invalid': submitted && f['imagen1'].errors }" />
+              <div *ngIf="submitted && f['imagen1'].errors" class="invalid-feedback">
+                <div *ngIf="f['imagen1'].errors['required']">ingrese url de la imagen</div> <!--verificar si asi se valida imagenes-->
+                <div *ngIf="f['imagen1'].errors['minlength']">
+                  ingrese una url valida
+                </div>
+                <div *ngIf="f['imagen1'].errors['maxlength']">
+                  ingrese una url valida
+                </div>
+              </div>
+            </div>
+            <br>
+            <!----------campo de entrada de url de imagen personal------------------------>
+  
+  
+            <div class="form-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+              </svg>
+             
+              <label class="login-field-icon fui-lock" for="imagen2">&nbsp;IMAGEN PERSONAL</label>
+              <input type="url" formControlName="imagen2" class="form-control" id="imagen2"
+                [ngClass]="{ 'is-invalid': submitted && f['imagen2'].errors }" />
+              <div *ngIf="submitted && f['imagen2'].errors" class="invalid-feedback">
+                <div *ngIf="f['imagen2'].errors['required']">ingrese url de la imagen</div>
+                <div *ngIf="f['imagen2'].errors['minlength']">
+                 ingrese una url valida
+                </div>
+                <div *ngIf="f['imagen2'].errors['maxlength']">
+                ingrese una url valida
+                </div>
+              </div>
+            </div>
+            <br>
+  
+            <!---campo de ingreso de nombre-->
+            <div class="form-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
+                <path d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z"/>
+              </svg>
+              <label class="login-field-icon fui-lock" for="nombre">&nbsp;NOMBRE</label>
+              <input type="text" formControlName="nombre" class="form-control" id="nombre"
+                [ngClass]="{ 'is-invalid': submitted && f['nombre'].errors }" />
+              <div *ngIf="submitted && f['nombre'].errors" class="invalid-feedback">
+                <div *ngIf="f['nombre'].errors['required']">ingrese texto</div>
+                <div *ngIf="f['nombre'].errors['minlength']">
+                  minimo 6 caracteres de entrada
+                </div>
+                <div *ngIf="f['nombre'].errors['maxlength']">
+                  maximo 40 caracteres de entrada
+                </div>
+              </div>
+            </div>
+            <br>
+            <!---campo de ingreso de apellido-->
+            <div class="form-group">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
+                <path d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z"/>
+              </svg>
+              <label class="login-field-icon fui-lock" for="apellido">&nbsp;APELLIDO</label>
+              <input type="text" formControlName="apellido" class="form-control" id="apellido"
+                [ngClass]="{ 'is-invalid': submitted && f['apellido'].errors }" />
+              <div *ngIf="submitted && f['apellido'].errors" class="invalid-feedback">
+                <div *ngIf="f['apellido'].errors['required']">ingrese texto</div>
+                <div *ngIf="f['apellido'].errors['minlength']">
+                  minimo 6 caracteres de entrada
+                </div>
+                <div *ngIf="f['apellido'].errors['maxlength']">
+                  maximo 40 caracteres de entrada
+                </div>
+              </div>
+            </div>
+            <br>
+            <!--botones de guardar y borrar---------------------------->
+  
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <div class="form-group">
+                <button class="entrada" type="submit" class="btn btn-success">GUARDAR</button>
+              &nbsp;
+              <button class="entrada" type="button" (click)="onReset()"
+                  class="btn btn-outline-success float-right">BORRAR </button>
+              </div>
+            </div>
+          </form>
+  
+        </div>
+  
+      </div>
     </div>
-    <!--input de ingreso de imagen de foto personal-->
-
-    <div class="mb-3">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
-        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
-      </svg>
-      <label for="exampleInputImageUrl2" class="form-label">&nbsp;IMAGEN PERSONAL</label>
-      <input type="url" class="form-control" id="exampleInputImageUrl2" aria-describedby="ImageUrl2Help">
-    </div>
-
-<!--input de ingreso de cambio de nombre-->
-
-    <div class="mb-3">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
-        <path d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z"/>
-      </svg>
-      <label for="exampleInputName" class="form-label">&nbsp; MI NOMBRE</label>
-      <input type="text" class="form-control" id="exampleInputName">
-    </div>
-
-    <!--input de ingreso de cambio de apellido-->
-
-    <div class="mb-3">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
-        <path d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z"/>
-      </svg>
-      <label for="exampleInputSurname" class="form-label">&nbsp; MI APELLIDO</label>
-      <input type="text" class="form-control" id="exampleInputSurname">
-    </div>
-
-    <!--boton guardar-->
-    
-    <button type="submit" class="btn btn-success">GUARDAR</button>
-  </form>
+  </body>

@@ -2,3 +2,6 @@
 label {
     color: #04ac04;
 }
+.form-group, body {
+    background-color: #fff;
+}
